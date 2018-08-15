@@ -15,6 +15,7 @@ public class Aluno extends Pessoa{
     public String cursos[];
 
     public Aluno() {
+        super();
     }
 
     public int getMatricula() {

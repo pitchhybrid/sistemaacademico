@@ -16,6 +16,7 @@ public class Professor extends Pessoa {
     public String disciplinas[];
 
     public Professor() {
+        super();
     }
 
     public int getMatricula() {
