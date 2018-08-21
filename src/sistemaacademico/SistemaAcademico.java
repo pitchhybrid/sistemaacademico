@@ -35,6 +35,7 @@ public class SistemaAcademico {
         aluno1.setCpf("123.456.789-00");
         aluno1.setSexo('M');
         aluno1.setAtivo(true);
+        aluno1.addTelefone(new Telefone(1,"085","12345678"));
 
         Aluno aluno2 = new Aluno();
         aluno2.setMatricula(456);
