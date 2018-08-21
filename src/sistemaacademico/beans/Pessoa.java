@@ -22,8 +22,14 @@ public abstract class Pessoa {
     public List<Endereco> enderecos;
     
     public Pessoa(){
-    ArrayList<Telefone> telefones = new ArrayList<Telefone>();
-    ArrayList<Endereco> enderecos = new ArrayList<Endereco>();
+   telefones = new ArrayList<Telefone>();
+   enderecos = new ArrayList<Endereco>();
+    }
+    
+    public void addTelefone(Telefone telefone){
+    
+        this.telefones.add(telefone);
+        
     }
 
     public List<Telefone> getTelefones() {
@@ -31,7 +37,7 @@ public abstract class Pessoa {
     }
 
     public void setTelefones(List<Telefone> telefones) {
-        this.telefones.add((Telefone) telefones);
+        this.telefones = telefones;
     }
 
     public List<Endereco> getEnderecos() {
@@ -39,7 +45,7 @@ public abstract class Pessoa {
     }
 
     public void setEnderecos(List<Endereco> enderecos) {
-        this.enderecos.add((Endereco) enderecos);
+        this.enderecos = enderecos;
     }
 
     public String getNome() {
