@@ -2,9 +2,9 @@
 package sistemaacademico.beans;
 
 public class Telefone {
-    public int tipo;
-    public String ddd;
-    public String fone;
+    private int tipo;
+    private String ddd;
+    private String fone;
 
     public Telefone() {
     }

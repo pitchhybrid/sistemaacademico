@@ -13,39 +13,42 @@ import java.util.List;
  * @author Aluno
  */
 public abstract class Pessoa {
-    public String nome;
-    public String cpf;
-    public char sexo;
-    public String dataNascimento;
-    public boolean ativo;
-    public List<Telefone> telefones;
-    public List<Endereco> enderecos;
+    private String nome;
+    private String cpf;
+    private char sexo;
+    private String dataNascimento;
+    private boolean ativo;
+    private List<Telefone> telefone;
+    private List<Endereco> endereco;
     
     public Pessoa(){
-   telefones = new ArrayList<Telefone>();
-   enderecos = new ArrayList<Endereco>();
+
+        telefone = new ArrayList<Telefone>();
+        endereco = new ArrayList<Endereco>();
     }
-    
+
     public void addTelefone(Telefone telefone){
-    
-        this.telefones.add(telefone);
-        
+        this.telefone.add(telefone);
     }
 
-    public List<Telefone> getTelefones() {
-        return telefones;
+    public void addEndereco(Endereco endereco){
+        this.endereco.add(endereco);
     }
 
-    public void setTelefones(List<Telefone> telefones) {
-        this.telefones = telefones;
+    public List<Telefone> getTelefone() {
+        return telefone;
     }
 
-    public List<Endereco> getEnderecos() {
-        return enderecos;
+    public void setTelefone(List<Telefone> telefone) {
+        this.telefone = telefone;
     }
 
-    public void setEnderecos(List<Endereco> enderecos) {
-        this.enderecos = enderecos;
+    public List<Endereco> getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(List<Endereco> endereco) {
+        this.endereco = endereco;
     }
 
     public String getNome() {
@@ -96,8 +99,8 @@ public abstract class Pessoa {
                 ", sexo=" + sexo +
                 ", dataNascimento='" + dataNascimento + '\'' +
                 ", ativo=" + ativo +
-                ", telefones=" + telefones +
-                ", enderecos=" + enderecos +
+                ", telefones=" + telefone +
+                ", enderecos=" + endereco +
                 '}';
     }
 }

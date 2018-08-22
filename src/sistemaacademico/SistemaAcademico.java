@@ -6,6 +6,7 @@
 package sistemaacademico;
 
 import sistemaacademico.beans.*;
+import java.util.ArrayList;
 
 /**
  *
@@ -20,53 +21,38 @@ public class SistemaAcademico {
         // TODO code application logic here
         System.out.println("Bem-Vindo baitola");
         
-        MostrarAluno();
-        MostrarProfessor();
-        
+        MostrarAluno(1,"jose","123.456.789-00",'M',true, new Telefone(1,"085","8888-8888"));
+        MostrarAluno(2,"Maria","987.789.123-00",'F',true, new Telefone(1,"085","8888-9999"));
+        MostrarProfessor(1,"Cicrano","456.789.123-12",'M',true, new Telefone(1,"085","7777-8888"));
+        MostrarProfessor(2,"Fulana","456.123.789-78",'F',true, new Telefone(1,"085","8765-9999"));
     }
     
     
     
-    public static void MostrarAluno(){
+    public static void MostrarAluno(int matricula,String nome,String cpf,char sexo,boolean ativo,Telefone telefone){
 
-        Aluno aluno1 = new Aluno();
-        aluno1.setMatricula(123);
-        aluno1.setNome("jose");
-        aluno1.setCpf("123.456.789-00");
-        aluno1.setSexo('M');
-        aluno1.setAtivo(true);
-        aluno1.addTelefone(new Telefone(1,"085","12345678"));
+        Aluno aluno = new Aluno();
+        aluno.setMatricula(matricula);
+        aluno.setNome(nome);
+        aluno.setCpf(cpf);
+        aluno.setSexo(sexo);
+        aluno.setAtivo(ativo);
+        aluno.addTelefone(telefone);
+        ExecutarConsole(aluno);
 
-        Aluno aluno2 = new Aluno();
-        aluno2.setMatricula(456);
-        aluno2.setNome("maria");
-        aluno2.setCpf("789.456.321-00");
-        aluno2.setSexo('F');
-        aluno2.setAtivo(true);
-
-        ExecutarConsole(aluno1);
-        ExecutarConsole(aluno2);
 
     }
 
-    public static void MostrarProfessor(){
+    public static void MostrarProfessor(int matricula,String nome,String cpf,char sexo,boolean ativo,Telefone telefone){
 
-        Professor prof1 = new Professor();
-        prof1.setMatricula(123);
-        prof1.setNome("jose");
-        prof1.setCpf("123.456.789-00");
-        prof1.setSexo('M');
-        prof1.setAtivo(true);
-
-        Professor prof2 = new Professor();
-        prof2.setMatricula(456);
-        prof2.setNome("maria");
-        prof2.setCpf("789.456.321-00");
-        prof2.setSexo('F');
-        prof2.setAtivo(true);
-
-        ExecutarConsole(prof1);
-        ExecutarConsole(prof2);
+        Professor prof = new Professor();
+        prof.setMatricula(matricula);
+        prof.setNome(nome);
+        prof.setCpf(cpf);
+        prof.setSexo(sexo);
+        prof.setAtivo(ativo);
+        prof.addTelefone(telefone);
+        ExecutarConsole(prof);
 
     }
 

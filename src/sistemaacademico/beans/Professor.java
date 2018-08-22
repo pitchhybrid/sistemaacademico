@@ -11,12 +11,19 @@ package sistemaacademico.beans;
  */
 public class Professor extends Pessoa {
     
-    public int matricula;
-    public String departamento;
-    public String disciplinas[];
+    private int matricula;
+    private String departamento;
+    private String disciplinas[];
 
     public Professor() {
-        super();
+    super();
+    }
+
+    public Professor(int matricula, String departamento, String[] disciplinas) {
+        this();
+        this.matricula = matricula;
+        this.departamento = departamento;
+        this.disciplinas = disciplinas;
     }
 
     public int getMatricula() {

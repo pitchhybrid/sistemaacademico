@@ -11,11 +11,17 @@ package sistemaacademico.beans;
  */
 public class Aluno extends Pessoa{
     
-    public int matricula;
-    public String cursos[];
+    private int matricula;
+    private String cursos[];
 
     public Aluno() {
-        super();
+    super();
+    }
+
+    public Aluno(int matricula, String[] cursos) {
+        this();
+        this.matricula = matricula;
+        this.cursos = cursos;
     }
 
     public int getMatricula() {
