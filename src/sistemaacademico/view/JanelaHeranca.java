@@ -8,7 +8,6 @@ public abstract class JanelaHeranca extends JFrame{
     
     public JanelaHeranca(){
         rootJanela();
-        inicializarComponentes();
     }
     
     
@@ -19,7 +18,7 @@ public abstract class JanelaHeranca extends JFrame{
          setTitle("root");
          setLocationRelativeTo(null);
          setResizable(false);
-         //setSize(400, 400);
+         setSize(400, 400);
          setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
      }
     
