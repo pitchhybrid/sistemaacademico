@@ -9,11 +9,8 @@ public abstract class JanelaHeranca extends JFrame{
     public JanelaHeranca(){
         rootJanela();
     }
-    
-    
-     abstract void  inicializarComponentes();
      
-     void rootJanela(){
+     private void rootJanela(){
      
          setTitle("root");
          setLocationRelativeTo(null);

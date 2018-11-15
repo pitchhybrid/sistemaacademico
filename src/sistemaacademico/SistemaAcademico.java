@@ -5,7 +5,7 @@
  */
 package sistemaacademico;
 
-import sistemaacademico.beans.*;
+//import sistemaacademico.beans.*;
 import sistemaacademico.view.*;
 
 /**
@@ -18,23 +18,23 @@ public class SistemaAcademico {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-      /*  System.out.println("Bem-Vindo baitola");
+       /* // TODO code application logic here
+        System.out.println("Bem-Vindo baitola");
         
         MostrarAluno(1,"jose","123.456.789-00",'M',true, new Telefone(1,"085","8888-8888"));
         MostrarAluno(2,"Maria","987.789.123-00",'F',true, new Telefone(1,"085","8888-9999"));
         MostrarProfessor(1,"Cicrano","456.789.123-12",'M',true, new Telefone(1,"085","7777-8888"));
-        MostrarProfessor(2,"Fulana","456.123.789-78",'F',true, new Telefone(1,"085","8765-9999"));*/
+        MostrarProfessor(2,"Fulana","456.123.789-78",'F',true, new Telefone(1,"085","8765-9999"));/*/
 
-      Janela app = new Janela();
+      Login app = new Login();
       app.setVisible(true);
       app.setTitle("Academico");
 
     }
     
+  
     
-    
-    public static void MostrarAluno(int matricula,String nome,String cpf,char sexo,boolean ativo,Telefone telefone){
+  /*  public static void MostrarAluno(int matricula,String nome,String cpf,char sexo,boolean ativo,Telefone telefone){
 
         Aluno aluno = new Aluno();
         aluno.setMatricula(matricula);
@@ -65,8 +65,7 @@ public class SistemaAcademico {
 
         System.out.println(pessoa);
 
-
-    }
+    }*/
    
      
     
