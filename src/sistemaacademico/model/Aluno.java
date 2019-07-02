@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemaacademico.beans;
+package sistemaacademico.model;
 
 /**
  *
@@ -15,11 +15,9 @@ public class Aluno extends Pessoa{
     private String cursos[];
 
     public Aluno() {
-    super();
     }
 
     public Aluno(int matricula, String[] cursos) {
-        this();
         this.matricula = matricula;
         this.cursos = cursos;
     }
@@ -39,15 +37,6 @@ public class Aluno extends Pessoa{
     public void setCursos(String[] cursos) {
         this.cursos = cursos;
     }
-
-    @Override
-    public String toString() {
-        return "Aluno{"+ super.toString() + "matricula=" + matricula + '}';
-    }
-
-    
-    
-    
     
     
 }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemaacademico.beans;
+package sistemaacademico.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,14 +18,10 @@ public abstract class Pessoa {
     private char sexo;
     private String dataNascimento;
     private boolean ativo;
-    private List<Telefone> telefone;
-    private List<Endereco> endereco;
+    private List<Telefone> telefone = new ArrayList<Telefone>();
+    private List<Endereco> endereco = new ArrayList<Endereco>();
     
-    public Pessoa(){
-
-        telefone = new ArrayList<Telefone>();
-        endereco = new ArrayList<Endereco>();
-    }
+    public Pessoa(){}
 
     public void addTelefone(Telefone telefone){
         this.telefone.add(telefone);
@@ -89,18 +85,5 @@ public abstract class Pessoa {
 
     public void setAtivo(boolean ativo) {
         this.ativo = ativo;
-    }
-
-    @Override
-    public String toString() {
-        return "Pessoa{" +
-                "nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", sexo=" + sexo +
-                ", dataNascimento='" + dataNascimento + '\'' +
-                ", ativo=" + ativo +
-                ", telefones=" + telefone +
-                ", enderecos=" + endereco +
-                '}';
     }
 }

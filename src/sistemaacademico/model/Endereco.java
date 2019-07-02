@@ -1,5 +1,5 @@
 
-package sistemaacademico.beans;
+package sistemaacademico.model;
 
 public class Endereco {
     
@@ -91,13 +91,5 @@ public class Endereco {
     public void setUf(String uf) {
         this.uf = uf;
     }
-
-    @Override
-    public String toString() {
-        return "Endereco{" + "tipo=" + tipo + ", logadouro=" + logadouro + ", numero=" + numero + ", complemento=" + complemento + ", bairro=" + bairro + ", cep=" + cep + ", municipio=" + municipio + ", uf=" + uf + '}';
-    }
-
    
-    
-    
 }

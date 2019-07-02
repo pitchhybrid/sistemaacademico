@@ -1,5 +1,5 @@
 
-package sistemaacademico.view;
+package sistemaacademico.controller;
 
 import javax.swing.*;
 
@@ -15,7 +15,6 @@ public abstract class JanelaHeranca extends JFrame{
          setTitle("root");
          setLocationRelativeTo(null);
          setResizable(false);
-         setSize(400, 400);
          setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
      }
     

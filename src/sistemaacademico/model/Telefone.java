@@ -1,5 +1,5 @@
 
-package sistemaacademico.beans;
+package sistemaacademico.model;
 
 public class Telefone {
     private int tipo;
@@ -13,11 +13,6 @@ public class Telefone {
         this.tipo = tipo;
         this.ddd = ddd;
         this.fone = fone;
-    }
-
-    @Override
-    public String toString() {
-        return "Telefone{" + "tipo=" + tipo + ", ddd=" + ddd + ", fone=" + fone + '}';
     }
 
     public int getTipo() {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package sistemaacademico.beans;
+package sistemaacademico.model;
 
 /**
  *
@@ -48,11 +48,6 @@ public class Professor extends Pessoa {
 
     public void setDisciplinas(String[] disciplinas) {
         this.disciplinas = disciplinas;
-    }
-
-    @Override
-    public String toString() {
-        return "Professor{"+ super.toString() + "matricula=" + matricula + '}';
     }
 
     

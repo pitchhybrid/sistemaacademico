@@ -1,6 +1,5 @@
-package sistemaacademico.view;
+package sistemaacademico.controller;
 
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -16,10 +15,10 @@ JPasswordField txfSenha;
     
     public Login(){
         inicializarComponentes();
-        setSize(600,300);
     }
 
     private void inicializarComponentes() {
+        setSize(600,300);
         setLayout(null);
         JLabel imagem = new JLabel(new ImageIcon("./assets/login.png"));
         imagem.setBounds(0,1,250,250);
@@ -71,7 +70,10 @@ JPasswordField txfSenha;
         }
         if(btn.getText().equals("Entrar")){
             if(txfLogin.getText().equalsIgnoreCase("Aluno") && "123456".equals(String.valueOf(senha))){
-                
+                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                menuPrincipal.setVisible(true);
+                setDefaultCloseOperation(HIDE_ON_CLOSE);
+                dispose();
             }else{
                 JOptionPane.showMessageDialog(this, "Campos Vazios ou Senha Errada!!!");
             }
